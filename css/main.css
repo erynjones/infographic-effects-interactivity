@@ -1,0 +1,810 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f2d2e2;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: #d42380;
+}
+
+p {
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+header {
+  background-color: #eda3c8;
+  position: relative;
+  height: 180px;
+}
+
+h1 {
+  font-family: "Allura", cursive;
+  color: white;
+  width: 75%;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Allura", cursive;
+  text-align: center;
+  color: #d42380;
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0.75em 0.5em 0 0.5em;
+}
+
+h3 {
+  color: #e9579e;
+  text-align: center;
+  padding: 0 0.5em 0 0.5em;
+  margin: 0;
+}
+
+h4 {
+  color: #fff;
+  text-align: center;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.arrow, .arro, .arr, .ar {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.scale {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.couple, .doggy, .friends {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 150px;
+}
+
+.uk, .us {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 75px;
+}
+
+.center {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.big-1, .big-2, .big-3 {
+  text-align: center;
+  font-size: 2em;
+  color: #e9579e;
+  margin: 0;
+  padding: 0;
+}
+
+.uk-info, .us-info {
+  width: 225px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.beloved {
+  background-color: #eda3c8;
+}
+
+.pricing {
+  position: relative;
+  padding: 1em;
+}
+
+.table {
+  width: 100%;
+}
+
+.cupid {
+  position: absolute;
+  width: 150px;
+  left: 5px;
+  top: 10px;
+  transform-origin: middle;
+  animation: spin 4s alternate infinite;
+}
+
+@keyframes spin {
+
+  0% { transform: rotate(-15deg); }
+
+  100% { transform: rotate(15deg); }
+}
+
+@media only screen and (min-width: 31em) {
+
+  h1 {
+    width: 75%;
+    top: 5px;
+    right: 0;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .uk {
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    left: 58px;
+  }
+
+  .us {
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    right: 58px;
+  }
+
+  .uk-info {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    left: 7px;
+  }
+
+  .us-info {
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    right: 7px;
+  }
+
+  .beloved {
+    position: relative;
+    bottom: -15px;
+  }
+
+  .pricing {
+    padding-bottom: 15em;
+  }
+
+  .table {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .appreciation, .lucky, .sensitive, .reciprocity {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+
+  h1 {
+    font-size: 2.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .beloved {
+    bottom: -20px;
+  }
+
+  .uk {
+    left: 75px;
+  }
+
+  .us {
+
+    right: 75px;
+  }
+
+  .uk-info {
+    left: 25px;
+  }
+
+  .us-info {
+    right: 25px;
+  }
+
+  .appreciation, .lucky, .sensitive, .reciprocity {
+    margin-right: 6em;
+    margin-left: 6em;
+  }
+}
+
+@media only screen and (min-width: 52em) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  .cupid {
+    width: 215px;
+  }
+
+  .uk {
+    left: 108px;
+  }
+
+  .us {
+
+    right: 108px;
+  }
+
+  .uk-info {
+    left: 55px;
+  }
+
+  .us-info {
+    right: 55px;
+  }
+
+  .beloved {
+    bottom: -30px;
+  }
+
+  .appreciation, .lucky, .sensitive, .reciprocity {
+    margin-right: 9em;
+    margin-left: 9em;
+  }
+}
+
+@media only screen and (min-width: 69em) {
+
+  h1 {
+    font-size: 3.5em;
+    right: 60px;
+  }
+
+  h2 {
+    font-size: 2.75em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .cupid {
+    left: 60px;
+  }
+
+  .table {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  .beloved {
+    height: 1000px;
+    top: 345px;
+  }
+
+  .sensitive {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .appreciation {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .lucky {
+    position: absolute;
+    display: inline-block;
+    top: 625px;
+    left: 15px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .reciprocity {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 625px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .all {
+    position: relative;
+  }
+
+  .fifty {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    width: 33%;
+    top: 95px;
+  }
+
+  .thirty {
+    position: absolute;
+    display: inline-block;
+    left: 360px;
+    width: 33%;
+  }
+
+  .five {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    width: 33%;
+  }
+
+  .uk {
+    left: 185px;
+  }
+
+  .us {
+    right: 185px;
+  }
+
+  .uk-info {
+    left: 135px;
+  }
+
+  .us-info {
+    right: 135px;
+  }
+}
+
+.cupid-fill {
+  fill: #d42380;
+}
+
+.st0 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 3.8808;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #be1e2d;
+}
+
+.st2 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.9404;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.9106;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.4553;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.7651;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st6 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.3825;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st7 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2.2121;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st8 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.106;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st9 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 3.3472;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 1.6736;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st11 {
+  fill: #d42380;
+}
+
+.st12 {
+  fill: #fff;
+}
+
+.st13 {
+  fill: #754c29;
+}
+
+.st14 {
+  fill: #e9579e;
+}
+
+.st15 {
+  fill: #f4edef;
+}
+
+.st16 {
+  fill: #c49a6c;
+}
+
+.st17 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st18 {
+  fill: #9fdbef;
+}
+
+.st19 {
+  fill: #6c6466;
+}
+
+.st20 {
+  fill: #ddad34;
+}
+
+.st21 {
+  fill: #f2d2e2;
+}
+
+.st22 {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-miterlimit: 10;
+}
+
+.st23 {
+  fill: #8c8485;
+}
+
+.st24 {
+  fill: #603913;
+}
+
+.st25 {
+  fill: #603913;
+  stroke: #000;
+  stroke-width: 1.1025;
+  stroke-miterlimit: 10;
+}
+
+.st26 {
+  fill: #a7a9ac;
+}
+
+.st27 {
+  fill: none;
+  stroke: #39b54a;
+  stroke-width: 2.2;
+  stroke-miterlimit: 10;
+}
+
+.st28 {
+  fill: #f7d71d;
+}
+
+.st29 {
+  fill: #f7941e;
+}
+
+.st30 {
+  fill: #f9ed32;
+}
+
+.st31 {
+  fill: #fbb040;
+}
+
+.st32 {
+  fill: #f15a29;
+}
+
+.uk-0 {
+  clip-path: url("#uk-heart-2");
+  fill: #213c75;
+}
+
+.uk-1 {
+  clip-path: url("#uk-heart-2");
+  fill: #fff;
+}
+
+.uk-2 {
+  clip-path: url("#uk-heart-2");
+  fill: #e03a3e;
+}
+
+.uk-3 {
+  clip-path: url("#uk-heart-2");
+  fill: #dd3e44;
+}
+
+.us-0 {
+  xclip-path: url("#us-heart-2");
+  fill: #065ba6;
+}
+
+.us-1 {
+  xclip-path: url("#us-heart-2");
+  fill: #fff;
+}
+
+.us-2 {
+  xclip-path: url("#us-heart-2");
+  fill: #e12529;
+}
+
+.couple-0 {
+  fill: #edb283;
+}
+
+.couple-1 {
+  fill: #603913;
+}
+
+.couple-2 {
+  fill: #fff;
+}
+
+.couple-3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.friends-0 {
+  fill: #e9579e;
+}
+
+.friends-1 {
+  fill: #edb283;
+}
+
+.friends-2 {
+  fill: #603913;
+}
+
+.friends-3 {
+  fill: #fff;
+}
+
+.friends-4 {
+  fill: #be1e2d;
+}
+
+.friends-5 {
+  fill: #911a1f;
+}
+
+.friends-6 {
+  fill: #262262;
+}
+
+.dog-0 {
+  fill: #452c15;
+}
+
+.dog-1 {
+  fill: #65431a;
+}
+
+.dog-2 {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.dog-3 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.dog-4 {
+  fill: #291111;
+}
+
+.scale-0 {
+  fill: #bf9e2f;
+}
+
+.scale-1 {
+  fill: #be1e2d;
+}
+
+.scale-2 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.scale-3 {
+  fill: none;
+  stroke: #be1e2d;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.scale-4 {
+  fill: #be1e2d;
+  stroke: #be1e2d;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.arrow-0 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 6.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.arrow-1 {
+  fill: #be1e2d;
+}
+
+.arrow-2 {
+  fill: none;
+  stroke: #bf9e2f;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.uk-info-0 {
+  fill: #d42380;
+}
+
+.uk-info-1 {
+  fill: #fff;
+}
+
+.us-info-0 {
+  fill: #d42380;
+}
+
+.us-info-1 {
+  fill: #fff;
+}

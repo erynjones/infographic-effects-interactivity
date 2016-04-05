@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150">
+  <style>
+    .st0{clip-path:url(#SVGID_2_);fill:#213C75;} .st1{clip-path:url(#SVGID_2_);fill:#FFFFFF;} .st2{clip-path:url(#SVGID_2_);fill:#E03A3E;} .st3{clip-path:url(#SVGID_2_);fill:#DD3E44;}
+  </style>
+  <defs>
+    <path id="SVGID_1_" d="M74 39C38.5-21-26 51.4 19.5 88.4c28.2 23 51.3 42.5 54.7 51.5 4-9 45.4-44 56.5-53 43.3-42-24-103-56.4-48z"/>
+  </defs>
+  <clipPath id="SVGID_2_">
+    <use xlink:href="#SVGID_1_" overflow="visible"/>
+  </clipPath>
+  <path d="M-30 13h88.8v48H-30z" class="st0"/>
+  <path d="M-29.3 93h88.8v48h-88.8z" class="st0"/>
+  <path d="M91.4 94.8h88.8v48H91.4z" class="st0"/>
+  <path d="M91.4 13h88.8v48H91.4z" class="st0"/>
+  <path d="M56.7 11h34.7v130H56.7z" class="st1"/>
+  <path d="M0 94.8V60h148.5v35z" class="st1"/>
+  <path d="M57.2 79.8L78 52l82.6 61.8-20.8 27.8z" class="st1"/>
+  <path d="M48.5 76.4l20.4 28-84 60.8-20.6-28z" class="st1"/>
+  <path d="M-39 19.3l15.4-23.6 86.3 56.7L47.2 76z" class="st1"/>
+  <path d="M166.8-1l16 23-85 58.7-16-23.2z" class="st1"/>
+  <path d="M64.5 11h19.8v130H64.5z" class="st2"/>
+  <path d="M1.6 87.3V67.5h145v19.8z" class="st2"/>
+  <path d="M-29 19l62 41.6h16L-21 13z" class="st3"/>
+  <path d="M171.2 13l-64 47.6h-16L156.8 13z" class="st3"/>
+  <path d="M-16 136.6l63.4-42h10v2.2l-59.3 40z" class="st3"/>
+  <path d="M101.6 95l65.5 41.6h11v-3L116 95z" class="st3"/>
+</svg>
