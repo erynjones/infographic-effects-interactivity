@@ -8,7 +8,7 @@ for (i = 0; i < 75; i++) {
   $heart.addClass('heart');
   $heart.css({
     top: Math.random() * height,
-    left: Math.random() * width,
+    left: (Math.random() * 100) + '%',
     opacity: Math.random(),
     transform: 'rotate(' + Math.random() * 360 + 'deg) scale(' + Math.random() + ')'
   });
