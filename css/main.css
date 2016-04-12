@@ -78,6 +78,29 @@ h4 {
   margin-left: auto;
   display: block;
 }
+.arrow, .arr {
+  animation: transition 0.75s ease;
+}
+
+.arro, .ar {
+  transform-origin: center;
+  transform: scaleX(-1);
+  animation: trans 0.75s ease;
+}
+
+@keyframes transition {
+
+  0% { transform: translate(-400px, 0); }
+
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes trans {
+
+  0% { transform: translate(400px, 0) scaleX(-1); }
+
+  100% { transform: translate(0, 0)scaleX(-1); }
+}
 
 .scale {
   margin-right: auto;
@@ -148,6 +171,30 @@ h4 {
   0% { transform: rotate(-15deg); }
 
   100% { transform: rotate(15deg); }
+}
+
+.heart {
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  transform-origin: center center;
+  animation: twinkle 3s infinite alternate;
+  background: url("../images/heart.svg") no-repeat center center / contain transparent;
+}
+
+@keyframes twinkle {
+
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (min-width: 31em) {
@@ -436,30 +483,6 @@ h4 {
 
   .us-info {
     right: 135px;
-  }
-}
-
-.heart {
-  left: 0;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  width: 30px;
-  transform-origin: center center;
-  animation: twinkle 3s infinite alternate;
-  background: url("../images/heart.svg") no-repeat center center / contain transparent;
-}
-
-@keyframes twinkle {
-
-  0% {
-    width: 30px;
-    height: 30px;
-  }
-
-  100% {
-    width: 50px;
-    height: 50px;
   }
 }
 
