@@ -33,6 +33,7 @@ header {
   background-color: #eda3c8;
   position: relative;
   height: 180px;
+  overflow: hidden;
 }
 
 h1 {
@@ -47,6 +48,7 @@ h1 {
   font-size: 1.5em;
   padding: 0.5em;
   margin: 0;
+  z-index: 1;
 }
 
 h2 {
@@ -138,6 +140,7 @@ h4 {
   top: 10px;
   transform-origin: middle;
   animation: spin 4s alternate infinite;
+  z-index: 1;
 }
 
 @keyframes spin {
@@ -433,6 +436,30 @@ h4 {
 
   .us-info {
     right: 135px;
+  }
+}
+
+.heart {
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  transform-origin: center center;
+  animation: twinkle 3s infinite alternate;
+  background: url("../images/heart.svg") no-repeat center center / contain transparent;
+}
+
+@keyframes twinkle {
+
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
   }
 }
 
