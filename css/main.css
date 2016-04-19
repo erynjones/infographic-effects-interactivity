@@ -213,6 +213,15 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   display: block;
+  transition: all .2s ease-in-out;
+}
+
+.uk-info:hover {
+  transform: scale(1.25);
+}
+
+.us-info:hover {
+  transform: scale(1.25);
 }
 
 .beloved {
