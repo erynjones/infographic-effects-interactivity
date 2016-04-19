@@ -358,6 +358,48 @@ h4 {
   }
 }
 
+.arrow-heart {
+  transform-origin:  center;
+  transition: all 200ms ease-in;
+  animation: pump 600ms alternate infinite;
+}
+
+.present {
+  opacity: 0;
+}
+
+.big-present {
+  transform-origin: center;
+  opacity: 1;
+  animation: present-jiggle 250ms linear;
+}
+
+@keyframes present-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(10deg);
+  }
+
+  66% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(3.5deg);
+  }
+}
+
+@keyframes pump {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.2); }
+}
+
 @media only screen and (min-width: 31em) {
 
   h1 {

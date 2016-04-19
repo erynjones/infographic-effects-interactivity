@@ -5,6 +5,7 @@ var $ar = $('.ar');
 var $arr = $('.arr');
 var $arro = $('.arro');
 var $arrow = $('.arrow');
+var $present = $('.present');
 
 $couple.waypoint (function (direction) {
   if (direction == 'down') {
@@ -61,3 +62,11 @@ $arrow.waypoint (function (direction) {
     $arrow.removeClass('js-arrow-3-animate');
   }
 }, { offset: '100%' });
+
+$present.waypoint (function (direction) {
+  if (direction == 'down') {
+    $present.addClass('big-present');
+  } else {
+    $present.removeClass('big-present');
+  }
+}, { offset: '50%' });
