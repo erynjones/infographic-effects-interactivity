@@ -69,4 +69,4 @@ $present.waypoint (function (direction) {
   } else {
     $present.removeClass('big-present');
   }
-}, { offset: '50%' });
+}, { offset: '100%' });
