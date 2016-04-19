@@ -359,7 +359,7 @@ h4 {
 }
 
 .arrow-heart {
-  transform-origin:  center;
+  transform-origin: center;
   transition: all 200ms ease-in;
   animation: pump 600ms alternate infinite;
 }
