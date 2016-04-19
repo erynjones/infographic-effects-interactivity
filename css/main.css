@@ -292,15 +292,19 @@ h4 {
 }
 
 @keyframes couple-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -312,15 +316,19 @@ h4 {
 }
 
 @keyframes friends-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -332,15 +340,19 @@ h4 {
 }
 
 @keyframes doggy-jiggle {
+
   0% {
     transform: rotate(0);
   }
+
   33% {
     transform: rotate(15deg);
   }
+
   66% {
     transform: rotate(-15deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -856,17 +868,17 @@ h4 {
 }
 
 .us-0 {
-  xclip-path: url("#us-heart-2");
+  clip-path: url("#us-heart-2");
   fill: #065ba6;
 }
 
 .us-1 {
-  xclip-path: url("#us-heart-2");
+  clip-path: url("#us-heart-2");
   fill: #fff;
 }
 
 .us-2 {
-  xclip-path: url("#us-heart-2");
+  clip-path: url("#us-heart-2");
   fill: #e12529;
 }
 
