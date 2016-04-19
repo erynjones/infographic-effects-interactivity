@@ -78,28 +78,51 @@ h4 {
   margin-left: auto;
   display: block;
 }
-.arrow, .arr {
-  animation: transition 0.75s ease;
-}
 
-.arro, .ar {
-  transform-origin: center;
+.js-arrow-animate {
   transform: scaleX(-1);
-  animation: trans 0.75s ease;
+  animation: arrow 0.75s ease;
 }
 
-@keyframes transition {
+@keyframes arrow {
+
+  0% { transform: translate(400px, 0) scaleX(-1); }
+
+  100% { transform: translate(0, 0) scaleX(-1); }
+}
+
+.js-arrow-1-animate {
+  animation: arrow-1 0.75s ease;
+}
+
+@keyframes arrow-1 {
 
   0% { transform: translate(-400px, 0); }
 
   100% { transform: translate(0, 0); }
 }
 
-@keyframes trans {
+.js-arrow-2-animate {
+  transform: scaleX(-1);
+  animation: arrow-2 0.75s ease;
+}
+
+@keyframes arrow-2 {
 
   0% { transform: translate(400px, 0) scaleX(-1); }
 
-  100% { transform: translate(0, 0)scaleX(-1); }
+  100% { transform: translate(0, 0) scaleX(-1); }
+}
+
+.js-arrow-3-animate {
+  animation: arrow-3 0.75s ease;
+}
+
+@keyframes arrow-3 {
+
+  0% { transform: translate(-400px, 0); }
+
+  100% { transform: translate(0, 0); }
 }
 
 .scale {
@@ -113,6 +136,21 @@ h4 {
   margin-left: auto;
   display: block;
   width: 150px;
+}
+
+.couple {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.doggy {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.friends {
+  opacity: 0;
+  transition: all 200ms ease-in;
 }
 
 .uk, .us {
@@ -194,6 +232,66 @@ h4 {
   100% {
     width: 50px;
     height: 50px;
+  }
+}
+
+.js-couple-animate {
+  opacity: 1;
+  animation: couple-jiggle 250ms linear;
+}
+
+@keyframes couple-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.js-friends-animate {
+  opacity: 1;
+  animation: friends-jiggle 250ms linear;
+}
+
+@keyframes friends-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.js-doggy-animate {
+  opacity: 1;
+  animation: doggy-jiggle 250ms linear;
+}
+
+@keyframes doggy-jiggle {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 
