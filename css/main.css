@@ -192,6 +192,14 @@ h4 {
   margin-left: auto;
   display: block;
   width: 75px;
+  animation: pulse 600ms alternate infinite;
+}
+
+@keyframes pulse {
+
+  0% { transform: scale(1); }
+
+  100% { transform: scale(1.25); }
 }
 
 .center {
