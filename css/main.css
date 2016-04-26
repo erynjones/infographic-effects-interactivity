@@ -510,19 +510,12 @@ h4 {
   }
 }
 
-.arrow-heart {
-  transform-origin: center;
-  transition: all 200ms ease-in;
-  -webkit-animation: pump 600ms alternate infinite;
-  animation: pump 600ms alternate infinite;
-}
-
 .present {
   opacity: 0;
 }
 
 .big-present {
-  transform-origin: center;
+  transform-origin: 298px 256px;
   opacity: 1;
   -webkit-animation: present-jiggle 250ms linear;
   animation: present-jiggle 250ms linear;
@@ -564,20 +557,6 @@ h4 {
   100% {
     transform: rotate(3.5deg);
   }
-}
-
-@-webkit-keyframes pump {
-
-  0% { -webkit-transform: scale(1); }
-
-  100% { -webkit-transform: scale(1.2); }
-}
-
-@keyframes pump {
-
-  0% { transform: scale(1); }
-
-  100% { transform: scale(1.2); }
 }
 
 @media only screen and (min-width: 31em) {
