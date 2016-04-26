@@ -22,6 +22,7 @@ body {
   padding: 0;
   font-family: "Lato", sans-serif;
   color: #d42380;
+  overflow-x: hidden;
 }
 
 p {
@@ -81,7 +82,15 @@ h4 {
 
 .js-arrow-animate {
   transform: scaleX(-1);
+  -webkit-animation: arrow 0.75s ease;
   animation: arrow 0.75s ease;
+}
+
+@-webkit-keyframes arrow {
+
+  0% { -webkit-transform: translate(400px, 0) scaleX(-1); }
+
+  100% { -webkit-transform: translate(0, 0) scaleX(-1); }
 }
 
 @keyframes arrow {
@@ -92,7 +101,15 @@ h4 {
 }
 
 .js-arrow-1-animate {
+  -webkit-animation: arrow-1 0.75s ease;
   animation: arrow-1 0.75s ease;
+}
+
+@-webkit-keyframes arrow-1 {
+
+  0% { -webkit-transform: translate(-400px, 0); }
+
+  100% { -webkit-transform: translate(0, 0); }
 }
 
 @keyframes arrow-1 {
@@ -104,7 +121,15 @@ h4 {
 
 .js-arrow-2-animate {
   transform: scaleX(-1);
+  -webkit-animation: arrow-2 0.75s ease;
   animation: arrow-2 0.75s ease;
+}
+
+@-webkit-keyframes arrow-2 {
+
+  0% { -webkit-transform: translate(400px, 0) scaleX(-1); }
+
+  100% { -webkit-transform: translate(0, 0) scaleX(-1); }
 }
 
 @keyframes arrow-2 {
@@ -115,7 +140,15 @@ h4 {
 }
 
 .js-arrow-3-animate {
+  -webkit-animation: arrow-3 0.75s ease;
   animation: arrow-3 0.75s ease;
+}
+
+@-webkit-keyframes arrow-3 {
+
+  0% { -webkit-transform: translate(-400px, 0); }
+
+  100% { -webkit-transform: translate(0, 0); }
 }
 
 @keyframes arrow-3 {
@@ -133,7 +166,15 @@ h4 {
 
 .balance {
   transform-origin: center;
+  -webkit-animation: turn 3s alternate infinite;
   animation: turn 3s alternate infinite;
+}
+
+@-webkit-keyframes turn {
+
+  0% { -webkit-transform: rotate(-10deg); }
+
+  100% { -webkit-transform: rotate(20deg); }
 }
 
 @keyframes turn {
@@ -144,7 +185,15 @@ h4 {
 }
 
 .scale-girl {
+  -webkit-animation: up 3s alternate infinite;
   animation: up 3s alternate infinite;
+}
+
+@-webkit-keyframes up {
+
+  0% { -webkit-transform: translate(0, -5px); }
+
+  100% { -webkit-transform: translate(0, 15px); }
 }
 
 @keyframes up {
@@ -155,7 +204,15 @@ h4 {
 }
 
 .scale-man {
+  -webkit-animation: down 3s alternate infinite;
   animation: down 3s alternate infinite;
+}
+
+@-webkit-keyframes down {
+
+  0% { -webkit-transform: translate(0, 10px); }
+
+  100% { -webkit-transform: translate(0, -20px); }
 }
 
 @keyframes down {
@@ -174,16 +231,19 @@ h4 {
 
 .couple {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .doggy {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
 .friends {
   opacity: 0;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
@@ -192,7 +252,15 @@ h4 {
   margin-left: auto;
   display: block;
   width: 75px;
+  -webkit-animation: pulse 600ms alternate infinite;
   animation: pulse 600ms alternate infinite;
+}
+
+@-webkit-keyframes pulse {
+
+  0% { -webkit-transform: scale(1); }
+
+  100% { -webkit-transform: scale(1.25); }
 }
 
 @keyframes pulse {
@@ -225,10 +293,12 @@ h4 {
 }
 
 .uk-info:hover {
+  -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
 
 .us-info:hover {
+  -webkit-transform: scale(1.25);
   transform: scale(1.25);
 }
 
@@ -251,8 +321,16 @@ h4 {
   left: 5px;
   top: 10px;
   transform-origin: middle;
+  -webkit-animation: spin 4s alternate infinite;
   animation: spin 4s alternate infinite;
   z-index: 1;
+}
+
+@-webkit-keyframes spin {
+
+  0% { -webkit-transform: rotate(-15deg); }
+
+  100% { -webkit-transform: rotate(15deg); }
 }
 
 @keyframes spin {
@@ -269,8 +347,22 @@ h4 {
   top: 0;
   width: 30px;
   transform-origin: center center;
+  -webkit-animation: twinkle 3s infinite alternate;
   animation: twinkle 3s infinite alternate;
   background: url("../images/heart.svg") no-repeat center center / contain transparent;
+}
+
+@-webkit-keyframes twinkle {
+
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @keyframes twinkle {
@@ -288,7 +380,27 @@ h4 {
 
 .js-couple-animate {
   opacity: 1;
+  -webkit-animation: couple-jiggle 250ms linear;
   animation: couple-jiggle 250ms linear;
+}
+
+@-webkit-keyframes couple-jiggle {
+
+  0% {
+    -webkit-transform: rotate(0);
+  }
+
+  33% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+  }
 }
 
 @keyframes couple-jiggle {
@@ -312,7 +424,27 @@ h4 {
 
 .js-friends-animate {
   opacity: 1;
+  -webkit-animation: friends-jiggle 250ms linear;
   animation: friends-jiggle 250ms linear;
+}
+
+@-webkit-keyframes friends-jiggle {
+
+  0% {
+    -webkit-transform: rotate(0);
+  }
+
+  33% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+  }
 }
 
 @keyframes friends-jiggle {
@@ -336,7 +468,27 @@ h4 {
 
 .js-doggy-animate {
   opacity: 1;
+  -webkit-animation: doggy-jiggle 250ms linear;
   animation: doggy-jiggle 250ms linear;
+}
+
+@-webkit-keyframes doggy-jiggle {
+
+  0% {
+    -webkit-transform: rotate(0);
+  }
+
+  33% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+  }
 }
 
 @keyframes doggy-jiggle {
@@ -361,6 +513,7 @@ h4 {
 .arrow-heart {
   transform-origin: center;
   transition: all 200ms ease-in;
+  -webkit-animation: pump 600ms alternate infinite;
   animation: pump 600ms alternate infinite;
 }
 
@@ -371,7 +524,27 @@ h4 {
 .big-present {
   transform-origin: center;
   opacity: 1;
+  -webkit-animation: present-jiggle 250ms linear;
   animation: present-jiggle 250ms linear;
+}
+
+@-webkit-keyframes present-jiggle {
+
+  0% {
+    -webkit-transform: rotate(0);
+  }
+
+  33% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(3.5deg);
+  }
 }
 
 @keyframes present-jiggle {
@@ -391,6 +564,13 @@ h4 {
   100% {
     transform: rotate(3.5deg);
   }
+}
+
+@-webkit-keyframes pump {
+
+  0% { -webkit-transform: scale(1); }
+
+  100% { -webkit-transform: scale(1.2); }
 }
 
 @keyframes pump {
