@@ -165,7 +165,7 @@ h4 {
 }
 
 .balance {
-  transform-origin: center;
+  transform-origin: 110.424px 58.34px;
   -webkit-animation: turn 3s alternate infinite;
   animation: turn 3s alternate infinite;
 }
